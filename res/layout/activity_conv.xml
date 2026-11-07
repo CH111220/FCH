@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <!-- 顶栏：玻璃条 -->
+  <LinearLayout
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:orientation="horizontal" android:gravity="center_vertical"
+      android:paddingStart="8dp" android:paddingEnd="16dp"
+      android:paddingTop="10dp" android:paddingBottom="10dp"
+      android:background="@drawable/glass_card">
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="42dp" android:layout_height="42dp"
+        android:padding="10dp" android:src="@drawable/ic_back"
+        android:contentDescription="back"/>
+    <LinearLayout
+        android:layout_width="0dp" android:layout_weight="1"
+        android:layout_height="wrap_content" android:orientation="vertical">
+      <TextView
+          android:id="@+id/convTitle"
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:text="会话"
+          android:textSize="17sp" android:textStyle="bold"
+          android:singleLine="true" android:ellipsize="end"
+          android:textColor="@color/ink"/>
+      <TextView
+          android:id="@+id/convStat"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:text="共 0 条 · 撤回 0"
+          android:textSize="11sp" android:textColor="@color/faint"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="34dp" android:layout_height="34dp"
+        android:padding="9dp" android:src="@drawable/ic_bolt"
+        android:alpha="0.55" android:contentDescription=""/>
+  </LinearLayout>
+
+  <ListView
+      android:id="@+id/msgList"
+      android:layout_width="match_parent" android:layout_height="0dp"
+      android:layout_weight="1"
+      android:layout_marginTop="12dp"
+      android:divider="@null" android:dividerHeight="0dp"
+      android:clipToPadding="false"
+      android:paddingTop="4dp" android:paddingBottom="16dp"
+      android:scrollbars="none"/>
+</LinearLayout>
