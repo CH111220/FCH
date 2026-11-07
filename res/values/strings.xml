@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">消息防撤回</string>
+  <string name="tagline">QQ / 微信 实时归档 · 撤回也有痕</string>
+  <string name="today_stats">今日归档 %1$d 条 · 拦截撤回 %2$d</string>
+  <string name="cap_line">当前档位：%1$s · 最后归档 %2$s</string>
+  <string name="state_on">实时归档运行中</string>
+  <string name="state_off">未开启实时归档</string>
+  <string name="guide_title">开启通知使用权</string>
+  <string name="guide_desc">开启后，QQ / 微信发来的每条消息会在到达瞬间被归档。之后对方撤回，原文依然在这里。</string>
+  <string name="guide_btn">去开启</string>
+  <string name="group_tip_title">QQ 群聊请设为「所有人通知」</string>
+  <string name="group_tip_desc">群聊默认静音时系统不生成带正文的通知，工具就抓不到。进入 QQ 群 → 设置 → 消息通知 → 选「所有人」。</string>
+  <string name="empty_title">还没有归档</string>
+  <string name="empty_desc">让 QQ / 微信收到一条消息（单聊或开启通知的群），\n它到达的瞬间就会被存进这里。</string>
+  <string name="recalled_at">已撤回 · %1$s</string>
+  <string name="recall_sys">%1$s 撤回了一条消息</string>
+  <string name="conv_stat">共 %1$d 条 · 撤回 %2$d</string>
+  <string name="msg_placeholder">[此条内容为空]</string>
+  <string name="cap_root">Root</string>
+  <string name="cap_shizuku">Shizuku</string>
+  <string name="cap_normal">普通</string>
+  <string name="setting_notify">通知使用权</string>
+  <string name="setting_notify_desc">实时捕获消息与撤回事件（M1 核心）</string>
+  <string name="setting_full_capture">补全消息捕获</string>
+  <string name="full_capture_guide">部分消息没有正文或整群合并成"4 条新消息"，是 IM 通知设置所致。在 App 里打开：
+· QQ 单聊正文：QQ 设置 → 消息通知 → 显示通知内容
+· QQ 群消息：群设置 → 通知所有人
+ · 微信正文：微信 设置 → 消息与通知 → 显示消息内容
+没开的会话仍会留占位行，时间线不丢。</string>
+  <string name="btn_open_qq">打开 QQ</string>
+  <string name="full_file_title">所有文件访问（媒体增强）</string>
+  <string name="full_file_granted">已授予：可直接扫描 QQ 图片目录，不依赖系统索引</string>
+  <string name="full_file_need">未授予：媒体捕获依赖系统媒体索引，部分文件可能漏抓</string>
+  <string name="btn_manage_files">授予所有文件访问</string>
+  <string name="root_title">Root 模式（最强通道）</string>
+  <string name="root_desc">root 机可用：捕获 QQ 私有目录文件（.anim 动效表情等）并探测聊天数据库，实现全量文本捕获</string>
+  <string name="root_detected">检测到 root</string>
+  <string name="root_none">未检测到 root（自动走普通通道，功能不受影响）</string>
+  <string name="setting_cap">能力档位</string>
+  <string name="setting_cap_desc">按设备能力自动探测，取最高档</string>
+  <string name="cap_feature_1">消息正文 + 撤回原文归档（全档可用）</string>
+  <string name="cap_feature_2">聊天图片实时捕获（Shizuku 档）</string>
+  <string name="cap_feature_3">表情包文件保存（Shizuku 档）</string>
+  <string name="cap_feature_4">撤回前全量数据库备份（Root · 即将开放）</string>
+  <string name="setting_qq">QQ 群通知设置</string>
+  <string name="setting_data">归档数据</string>
+  <string name="setting_data_desc">全部存于本机 · 不联网 · 不影响手机上的 QQ / 微信</string>
+  <string name="btn_clear">清除全部归档</string>
+  <string name="clear_confirm">确定清除全部归档？图片、消息与撤回记录都会被删除，且无法恢复。</string>
+  <string name="about">关于</string>
+  <string name="about_text">本工具不登录 QQ / 微信、不协议抓包，只在手机本地监听通知并归档。\n手机上的 QQ 登录态完全不受影响；登出、换号甚至卸载 QQ 后，已归档内容仍可正常查看。</string>
+  <string name="go_system">去系统设置</string>
+  <string name="granted">已授权</string>
+  <string name="not_granted">未授权</string>
+  <string name="search_hint">搜索归档内容 / 会话 / 发送人</string>
+  <string name="search_empty">没有匹配的归档</string>
+  <string name="msg_kind_recall">系统提示</string>
+  <string name="badge_recall">撤回 %1$d</string>
+  <string name="suffix_recalled">（已撤回）</string>
+  <!-- M2 媒体 -->
+  <string name="media_count">媒体 %1$d 个（含表情 %2$d）· 查看</string>
+  <string name="media_title">媒体存档</string>
+  <string name="media_empty">还没有捕获到媒体文件。\n本 App 在前台时会自动把 QQ / 微信新发的图片/视频/表情包存档。\n（QQ 需先在聊天里收到过图片，系统才会建立媒体索引）</string>
+  <string name="media_kind_img">图片</string>
+  <string name="media_kind_emoji">表情</string>
+  <string name="media_kind_video">视频</string>
+  <string name="group_sys">系统提示</string>
+  <string name="group_unknown">未知</string>
+  <string name="group_meta">最近 %1$s</string>
+  <string name="msg_no_body">无正文（QQ 通知隐藏了内容）</string>
+  <string name="media_kind_other">文件</string>
+  <string name="setting_media">媒体捕获</string>
+  <string name="setting_media_desc">打开 App 时自动捕获 QQ / 微信新图片/视频/表情包，存到 App 存档与自选目录</string>
+  <string name="perm_media_title">媒体读取权限（必需）</string>
+  <string name="perm_granted">已授权：可捕获 QQ 图片/视频/表情包</string>
+  <string name="perm_denied">未授权：无法捕获媒体。点按钮授予</string>
+  <string name="btn_grant_perm">授权媒体读取</string>
+  <string name="sz_optional">Shizuku 增强通道（可选）：可额外捕获未被系统索引的表情文件</string>
+  <string name="btn_pick_dir">选保存目录</string>
+  <string name="btn_test_capture">测试捕获</string>
+  <string name="dir_selected">保存目录：%1$s</string>
+  <string name="dir_none">保存目录：仅 App 内存档（授予"所有文件访问"后可存到手机目录）</string>
+  <string name="dir_default">保存目录：%1$s（自动创建）</string>
+  <string name="sz_connected">Shizuku 已连接</string>
+  <string name="sz_missing">未安装 Shizuku（github.com/RikkaApps/Shizuku）</string>
+  <string name="sz_denied">已检测到 Shizuku：打开 Shizuku 应用，在应用列表里找到「消息防撤回」并勾选授权，再确保 Shizuku 处于运行状态</string>
+</resources>
