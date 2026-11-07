@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- 纯白主题 -->
+  <color name="bg_base">#FFFFFF</color>
+  <color name="bg_base2">#F6F7F8</color>
+
+  <!-- 文字 -->
+  <color name="ink">#1D2129</color>
+  <color name="sub">#6B7280</color>
+  <color name="faint">#9AA3B2</color>
+
+  <!-- 强调 -->
+  <color name="accent">#3370FF</color>
+  <color name="accent_dim">#1A3370FF</color>
+  <color name="danger">#F5485B</color>
+  <color name="ok">#16A34A</color>
+  <color name="warn">#F5A623</color>
+
+  <!-- 卡片 -->
+  <color name="card_fill">#F6F7F8</color>
+  <color name="card_stroke">#E9EBEF</color>
+  <color name="card_highlight">#FFFFFF</color>
+  <color name="card_fill_strong">#EFF1F4</color>
+
+  <!-- 头像色板（白底上保持清爽） -->
+  <color name="av_0">#4C8DFF</color>
+  <color name="av_1">#3D8BFF</color>
+  <color name="av_2">#7A6CFF</color>
+  <color name="av_3">#C86CF0</color>
+  <color name="av_4">#FF6C9E</color>
+  <color name="av_5">#F5A623</color>
+  <color name="av_6">#16A34A</color>
+  <color name="av_7">#FF8A5C</color>
+</resources>
