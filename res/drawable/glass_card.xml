@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 卡片：浅灰底，圆角 16 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+  <solid android:color="#F6F7F8"/>
+  <corners android:radius="16dp"/>
+</shape>
