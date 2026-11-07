@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:orientation="horizontal" android:gravity="center_vertical"
+      android:paddingStart="8dp" android:paddingEnd="16dp"
+      android:paddingTop="10dp" android:paddingBottom="10dp"
+      android:background="@drawable/glass_card">
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="42dp" android:layout_height="42dp"
+        android:padding="10dp" android:src="@drawable/ic_back"
+        android:contentDescription="back"/>
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="设置"
+        android:textSize="17sp" android:textStyle="bold"
+        android:textColor="@color/ink"/>
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent" android:layout_height="0dp"
+      android:layout_weight="1" android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+      <!-- 通知使用权 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <LinearLayout
+              android:layout_width="0dp" android:layout_weight="1"
+              android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/setting_notify"
+                android:textSize="15sp" android:textStyle="bold"
+                android:textColor="@color/ink"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/setting_notify_desc"
+                android:textSize="12sp" android:textColor="@color/sub"/>
+          </LinearLayout>
+          <TextView
+              android:id="@+id/notifyTag"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/not_granted"
+              android:textSize="11sp" android:textColor="@color/danger"
+              android:background="@drawable/tag_off"
+              android:paddingStart="9dp" android:paddingEnd="9dp"
+              android:paddingTop="4dp" android:paddingBottom="4dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btnNotify"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/go_system"
+            android:textSize="13sp" android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_primary"
+            android:paddingStart="18dp" android:paddingEnd="18dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp"/>
+      </LinearLayout>
+
+      <!-- 补全消息捕获（QQ 侧设置引导） -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/setting_full_capture"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/full_capture_guide"
+            android:textSize="12sp" android:textColor="@color/sub"
+            android:lineSpacingExtra="4dp"/>
+        <TextView
+            android:id="@+id/btnOpenQq"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/btn_open_qq"
+            android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:background="@drawable/glass_btn"
+            android:paddingStart="18dp" android:paddingEnd="18dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp"/>
+      </LinearLayout>
+
+      <!-- 能力档位 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <LinearLayout
+              android:layout_width="0dp" android:layout_weight="1"
+              android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/setting_cap"
+                android:textSize="15sp" android:textStyle="bold"
+                android:textColor="@color/ink"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/setting_cap_desc"
+                android:textSize="12sp" android:textColor="@color/sub"/>
+          </LinearLayout>
+          <TextView
+              android:id="@+id/capTag"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/cap_normal"
+              android:textSize="11sp" android:textColor="@color/warn"
+              android:background="@drawable/tag_warn"
+              android:paddingStart="9dp" android:paddingEnd="9dp"
+              android:paddingTop="4dp" android:paddingBottom="4dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/capFeature1"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="8dp"
+            android:text="@string/cap_feature_1"
+            android:textSize="12sp" android:textColor="@color/sub"/>
+        <TextView
+            android:id="@+id/capFeature2"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="8dp"
+            android:text="@string/cap_feature_2"
+            android:textSize="12sp" android:textColor="@color/faint"/>
+        <TextView
+            android:id="@+id/capFeature3"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="8dp"
+            android:text="@string/cap_feature_3"
+            android:textSize="12sp" android:textColor="@color/faint"/>
+        <TextView
+            android:id="@+id/capFeature4"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="8dp"
+            android:text="@string/cap_feature_4"
+            android:textSize="12sp" android:textColor="@color/faint"/>
+      </LinearLayout>
+
+      <!-- QQ 群通知提示 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/group_tip_title"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/group_tip_desc"
+            android:textSize="12sp" android:lineSpacingExtra="3dp"
+            android:textColor="@color/sub"/>
+      </LinearLayout>
+
+      <!-- 所有文件访问（30+ 媒体增强） -->
+      <LinearLayout
+          android:id="@+id/fullFileCard"
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/full_file_title"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:id="@+id/fullFileState"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/full_file_need"
+            android:textSize="12sp" android:textColor="@color/sub"/>
+        <TextView
+            android:id="@+id/btnManageFiles"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/btn_manage_files"
+            android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:background="@drawable/glass_btn"
+            android:paddingStart="14dp" android:paddingEnd="14dp"
+            android:paddingTop="7dp" android:paddingBottom="7dp"/>
+      </LinearLayout>
+
+      <!-- Root 模式 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/root_title"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/root_desc"
+            android:textSize="12sp" android:textColor="@color/sub"
+            android:lineSpacingExtra="3dp"/>
+        <TextView
+            android:id="@+id/rootState"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/root_none"
+            android:textSize="12sp" android:textColor="@color/faint"/>
+        <TextView
+            android:id="@+id/dbState"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp" android:textColor="@color/faint"
+            android:visibility="gone"/>
+      </LinearLayout>
+
+      <!-- 媒体捕获 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <LinearLayout
+              android:layout_width="0dp" android:layout_weight="1"
+              android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/setting_media"
+                android:textSize="15sp" android:textStyle="bold"
+                android:textColor="@color/ink"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/setting_media_desc"
+                android:textSize="12sp" android:textColor="@color/sub"/>
+          </LinearLayout>
+        </LinearLayout>
+        <!-- 权限行（普通模式，必需） -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <TextView
+              android:id="@+id/permState"
+              android:layout_width="0dp" android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="@string/perm_denied"
+              android:textSize="12sp" android:textColor="@color/sub"/>
+          <TextView
+              android:id="@+id/btnGrantPerm"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:text="@string/btn_grant_perm"
+              android:textSize="13sp" android:textStyle="bold"
+              android:textColor="#FFFFFF"
+              android:background="@drawable/btn_primary"
+              android:paddingStart="14dp" android:paddingEnd="14dp"
+              android:paddingTop="7dp" android:paddingBottom="7dp"/>
+        </LinearLayout>
+        <!-- Shizuku 增强通道（可选） -->
+        <TextView
+            android:id="@+id/szOptional"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/sz_optional"
+            android:textSize="12sp" android:textColor="@color/faint"/>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <TextView
+              android:id="@+id/shizukuTag"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Shizuku"
+              android:textSize="11sp" android:textColor="@color/faint"
+              android:background="@drawable/search_box"
+              android:paddingStart="9dp" android:paddingEnd="9dp"
+              android:paddingTop="4dp" android:paddingBottom="4dp"/>
+          <TextView
+              android:id="@+id/shizukuState"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:text="@string/sz_missing"
+              android:textSize="12sp" android:textColor="@color/faint"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" android:gravity="center_vertical">
+          <TextView
+              android:id="@+id/dirState"
+              android:layout_width="0dp" android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="@string/dir_none"
+              android:textSize="12sp" android:textColor="@color/sub"/>
+          <TextView
+              android:id="@+id/btnPickDir"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:text="@string/btn_pick_dir"
+              android:textSize="13sp" android:textStyle="bold"
+              android:textColor="#FFFFFF"
+              android:background="@drawable/btn_primary"
+              android:paddingStart="14dp" android:paddingEnd="14dp"
+              android:paddingTop="7dp" android:paddingBottom="7dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btnTestCapture"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_test_capture"
+            android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:background="@drawable/glass_btn"
+            android:paddingStart="14dp" android:paddingEnd="14dp"
+            android:paddingTop="7dp" android:paddingBottom="7dp"/>
+      </LinearLayout>
+
+      <!-- 数据 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/setting_data"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/setting_data_desc"
+            android:textSize="12sp" android:textColor="@color/sub"/>
+        <TextView
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/btn_clear"
+            android:textSize="13sp"
+            android:textColor="@color/danger"
+            android:background="@drawable/glass_btn"
+            android:paddingStart="18dp" android:paddingEnd="18dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp"/>
+      </LinearLayout>
+
+      <!-- 关于 -->
+      <LinearLayout
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:orientation="vertical" android:padding="18dp"
+          android:background="@drawable/glass_card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="15sp" android:textStyle="bold"
+            android:textColor="@color/ink"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/about_text"
+            android:textSize="12sp" android:lineSpacingExtra="3dp"
+            android:textColor="@color/sub"/>
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
